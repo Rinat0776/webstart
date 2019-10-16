@@ -1,0 +1,148 @@
+.offer
+  background: url('../img/offer/offer-bg.png') no-repeat
+  background-position: right center
+  background-size: contain
+  position: relative
+  &::before
+     content: ' '
+     width: 50%
+     height: 100%
+     position: absolute
+     top: 0
+     left: 0
+     background-color: #fff 
+  &-block  
+     display: flex
+     justify-content: space-between
+     flex-direction: column
+     max-width: 50%
+     padding-right:  90px
+     position: relative
+
+  &__title
+     display: flex
+     max-width: 360px
+     line-height: 35px
+     margin-bottom: 10px
+     margin-bottom: 20px
+     +bold
+
+  &__subtitle
+     display: flex
+     max-width: 250px
+     margin-bottom: 31px
+     +reg
+  &__input
+     display: inline-block
+     width: 240px
+     margin-bottom: 8px
+     &:first-child
+        margin-right: 10px
+  &__button
+     display: inline-block
+     width: 100%     
+     min-height: 70px
+     margin-top: 21px
+  &-info
+     display: flex
+     margin-top: 26px 
+  &__text
+     font-size: 15px
+     line-height: 24px
+     margin-bottom: 94px
+     margin-right: 70px
+  &-coll
+     display: flex
+     flex-direction: column
+     justify-content: space-between
+     height: 30px
+   
+  &__desc
+     display: flex
+     font-size: 15px
+     line-height: 24px 
+     min-width: 200px
+  &__phone
+     display: inline-block
+     font-size: 15px
+     line-height: 24px  
+     +bold
+       
+@media  ( max-width: 1200px )
+   .offer
+     background-size:  cover
+     &__input
+        width: 100%
+        margin-bottom: 10px
+     &__button
+        font-size: 13px    
+@media  ( max-width: 768px )  
+   .offer
+     background: #fff       
+     &-block
+         flex-direction: column
+         justify-content: center
+         align-items: center
+         width: 100%
+         padding-right: 0
+         margin: 0
+     &__text
+         display: block   
+         margin: 0
+     &__title
+        display: inline-block
+       
+      
+     &-info
+         display: flex
+         flex-direction: column
+
+
+@media  ( max-width: 567px )       
+   .offer
+     background: #fff      
+     &-block
+        width: 100%
+        padding-right: 0       
+     &__title
+        margin-bottom: 10px
+@media  (max-width: 320px)    
+   .offer
+     background: #fff  
+     padding: 20px 0
+     &-block
+         display: inline-block
+         flex-direction: column
+         justify-content: space-between
+         align-items: center
+         width: 100%  
+         padding-right: 0
+
+     &__title
+         font-size: 18px
+         width: 270px
+         line-height: 22px    
+         margin-bottom: 18px  
+         margin-top: 23px
+     &__subtitle
+        font-size: 14px
+        width: 210px
+        margin-bottom: 28px
+     &__input
+        margin-bottom: 6px
+     &__form
+        width: 275px 
+     &__button
+        font-size: 15px
+        line-height: 18px
+        margin-top: 4px
+        +bold
+     &-info
+          margin-top: 22px
+          margin-left: 6px
+     &-coll
+        width: 230px 
+        margin-top: 6px
+     &__text
+        width: 230px 
+       

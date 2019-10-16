@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Lesson_15</title>
+  <title>Lesson_16</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
             <span class="navbar__address">Калуга, Москва, МО</span>
             <a href="tel:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
           </div>
-          <button class="button  navbar__buton">Перезвоните мне</button>
+          <button class="button  navbar__buton" id="button">Перезвоните мне</button>
         </div>
       </div>
       <!-- /.navbar-block -->
@@ -69,9 +69,61 @@
       </div>
     </section>
     <!-- /.hero -->
-
+    <section class="offer   section">
+      <div class="container">
+        <div class="offer-block">
+          <h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект
+            Вашего жилья и реализуем его!
+          </h2>
+          <!-- /.section-title -->
+          <span class="section-subtitle  offer__subtitle"> Оставьте заявку на разработку
+            бесплатного дизайн-проекта!
+          </span>
+          <form action="#" class="form offer__form">
+            <input type="text" class="input offer__input" placeholder="Ваше имя">
+            <input type="tell" class="input offer__input" placeholder="Ваш телефон">
+            <button class="button offer__button">Получить бесплатный дизайн-проект</button>
+            <!-- /.button offer__button -->
+          </form>
+          <!-- /.form offer__form -->
+          <div class="offer-info">
+            <span class=" offer__text">Наш менеджер перезвонит Вам
+              в течение 60 секунд
+            </span>
+            <div class="offer-coll ">
+              <span class=" offer__desc">или перезвоните нам сами</span>
+              <span class=" offer__phone">+7 (495) 42-251-31</span>
+            </div>
+          </div>
+        </div>
+        <!-- /.section-subtitle -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.offer -->
   </main>
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <button class="modal-dialog__close" id="close">&times;</button>
+      <h4 class="modal__title">Узнайте точную стоимость ремонта по телефону!</h4>
+      <span class="modal__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+      <form action="#" class="form modal__form">
+        <input type="text" class="input modal__input" placeholder="Ваше имя">
+        <input type="tell" class="input modal__input" placeholder="Ваш телефон">
+        <button class="button modal__button">Узнать стоимость</button>
+        <!-- /.button modal__button -->
+      </form>
+      <div class="modal-dialog__info">
+        <span class="modal__text">Или Вы можете перезвонить нам сами по телефону: </span>
+        <div class="modal__phone">+7 (8182) 42-51-31</div>
+      </div>
+    </div>
 
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

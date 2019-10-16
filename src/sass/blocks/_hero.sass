@@ -1,17 +1,18 @@
 .hero
   padding:  50px 0 
+  background-color:  $secondary
   +reg
   &-block
      display: flex
   &-text 
      display: inline-block
-     width: 50%
-     padding-right: 15px
+     max-width: 51%
+     padding-right: 10px
      
      &__title 
         font-size: 41px
         line-height: 56px
-        margin-bottom: 15px
+        margin-bottom: 14px
         +bold
      &__subtitle
          display: inline-block
@@ -27,11 +28,12 @@
         align-items: center
         margin-bottom: 10px
         +reg
+        &:last-child
+           margin-bottom: 0
         
      &__image
-        flex-basis: 19px 
-        width: 20px
-        height: 20px
+        width: 40px
+        height: 40px
         border: 2px solid  $main-color
         border-radius: 50%  
         display: flex
@@ -42,29 +44,28 @@
         padding: 8px
         margin-top: 10px
        
-     &__text 
-        display: flex
-        width: 40%
-         +reg
+     &__text
+        display: inline-block
+        max-width: 253px
         font-size: 14px
         line-height: 24px
       
       
-      
-
 @media  ( max-width: 1200px )
    .hero
       &-block
-        display: flex
+        flex-direction: column
       &-list 
          margin-bottom: 44px
       &-text 
-         padding-right: 10px  
+        padding-right: 10px  
 
 @media  ( max-width: 991px )
    .hero
       &-block
-          flex-direction: column
+        flex-direction: column
+        align-content: center
+        justify-content: center
       &-list 
          margin-bottom: 44px
       &-text 
@@ -72,11 +73,15 @@
 
 @media  ( max-width: 768px )         
    .hero
+     &-block
+         flex-direction:  column 
+         justify-content: center  
+
      &-text 
-        &__litle
+        &__title
             font-size: 24px
-            font-weight: 1.4 
-            margin-bottom: 15px
+            line-height:  1.4
+            margin-bottom: 15px 
         &__subtitle
             font-size: 16px
             margin-bottom: 28px
@@ -87,7 +92,66 @@
             font-size: 12px
         &__image
            margin-right: 15px
-   
-     
-     
-   
+
+@media  ( max-width: 567px )    
+   .hero
+     &-block
+        width: 100%
+        height: 100%
+         flex-direction:  column 
+         justify-content: center  
+     &-text 
+        &__title
+            font-size: 24px
+            line-height:  1.4
+            margin-bottom: 15px 
+        &__subtitle
+            font-size: 16px
+            margin-bottom: 28px
+            line-height: 65px
+     &-list
+        &__item
+           margin-bottom: 10px
+           padding-left: 5px
+        &__text 
+            font-size: 10px
+        &__image
+           margin-right: 15px
+@media  (max-width: 320px)  
+   .hero
+      padding-top: 0
+      padding-bottom: 50px
+      &-block
+        flex-direction:  column 
+        justify-content: center  
+        width: 100%
+      &-text
+        max-width: 100%
+        margin:  2px 
+        &__title
+            font-size: 24px
+            width:  277px
+            margin-bottom: 7px 
+            margin-top: 49px
+            line-height: 30px
+        &__subtitle
+            font-size: 16px
+            margin-bottom: 23px
+            line-height: 19px
+            padding-left: 2px      
+      &-list
+        margin-bottom: 30px
+        &__item
+           margin-bottom: 10px
+           padding-left: 2px
+        &__text 
+            font-size: 12px
+            line-height: 14px
+            margin-top: 2px
+            +bold
+        &__image
+           margin-right: 13px
+           margin-top: 6px
+           margin-bottom: 4px
+           padding: 7px
+         
