@@ -53,12 +53,15 @@
       
 @media  ( max-width: 1200px )
    .hero
-      &-block
-        flex-direction: column
-      &-list 
-         margin-bottom: 44px
-      &-text 
-        padding-right: 10px  
+     &-block
+         flex-direction: column
+     &-list 
+          margin-bottom: 44px
+     &-text 
+          padding-right: 10px
+     &__title
+             align-items: center     
+
 
 @media  ( max-width: 991px )
    .hero
@@ -69,22 +72,26 @@
       &-list 
          margin-bottom: 44px
       &-text 
-         padding-right: 10px  
+         max-width: 100%
+         &__title
+             line-height: 20px
+             font-size: 30px
+         &__subtitle
+           
 
 @media  ( max-width: 768px )         
    .hero
      &-block
          flex-direction:  column 
          justify-content: center  
-
      &-text 
         &__title
-            font-size: 24px
-            line-height:  1.4
-            margin-bottom: 15px 
+           font-size: 34px
+           line-height: 50px
+           margin-bottom: 15px 
         &__subtitle
-            font-size: 16px
-            margin-bottom: 28px
+           font-size: 21px
+           margin-bottom: 28px
      &-list
         &__item
            margin-bottom: 20px
@@ -119,27 +126,29 @@
            margin-right: 15px
 @media  (max-width: 320px)  
    .hero
-      padding-top: 0
-      padding-bottom: 50px
-      &-block
+     padding-top: 0
+     padding-bottom: 50px
+     &-block
         flex-direction:  column 
         justify-content: center  
         width: 100%
-      &-text
+     &-text
         max-width: 100%
         margin:  2px 
         &__title
-            font-size: 24px
-            width:  277px
-            margin-bottom: 7px 
-            margin-top: 49px
-            line-height: 30px
+           font-size: 24px
+           width:  300px
+           margin-bottom: 8px 
+           margin-top: 49px
+           line-height: 29px
         &__subtitle
-            font-size: 16px
-            margin-bottom: 23px
-            line-height: 19px
-            padding-left: 2px      
-      &-list
+         
+           font-size: 16px
+           width: 210px
+           margin-bottom: 23px
+           line-height: 19px
+           padding-left: 2px      
+     &-list
         margin-bottom: 30px
         &__item
            margin-bottom: 10px
@@ -147,7 +156,8 @@
         &__text 
             font-size: 12px
             line-height: 14px
-            margin-top: 2px
+            margin-top: 4px
+            
             +bold
         &__image
            margin-right: 13px
